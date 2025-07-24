@@ -49,10 +49,10 @@ const Header: React.FC = () => {
               <Link
                 to={item.slug === "home" ? "/" : `/${item.slug}`}
                 onClick={() => handleNavClick(item.slug)}
-                className={`group relative flex flex-col justify-center px-4 text-[15px] font-semibold  ${
+                className={`group  relative flex flex-col justify-center px-4 text-[15px] font-semibold  ${
                   activeItem === item.slug
-                    ? "text-light bg-[#ED1F241A] h-full  px-10"
-                    : "text-light nav-gradient py-3"
+                    ? "text-light nav-gradient-back h-full  px-10"
+                    : "text-light nav-gradient  py-3"
                 } hover:text-[#ff0c10]`}
               >
                 {item.label}

@@ -12,7 +12,7 @@ html {
 .text-light {
   color: #c0c0c0;
 }
-.text-gradient-soft {
+.text-gradient-bold {
   background: linear-gradient(
     97.14deg,
     #b808f6 6.34%,
@@ -24,8 +24,10 @@ html {
   -webkit-text-fill-color: transparent;
   color: transparent;
 }
-.text-gradient-bold {
+
+.text-gradient-soft {
   background: linear-gradient(97.51deg, #b808f6 -31.26%, #ff7712 105.37%);
+
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -39,15 +41,13 @@ html {
   color: transparent;
 }
 .gradient-border {
-  border: 5px solid transparent;
-  border-image-source: linear-gradient(
-    97.51deg,
-    #b808f6 -31.26%,
-    #ff7712 105.37%
-  );
+  border: 3px solid transparent;
+  border-image: linear-gradient(97.51deg, #b808f6 -31.26%, #ff7712 105.37%);
   border-image-slice: 1;
   background-clip: padding-box;
+  border-radius: 9999px;
 }
+
 .border-gradient {
   background: linear-gradient(97.51deg, #b808f6 -31.26%, #ff7712 105.37%);
 }
@@ -55,6 +55,15 @@ html {
   border: 1px solid;
   border-image-source: linear-gradient(
     81.83deg,
+    rgba(184, 8, 246, 0) 25.45%,
+    #ff8a00 59.31%,
+    rgba(255, 138, 0, 0) 86.4%
+  );
+  border-image-slice: 1;
+}
+.nav-gradient-back {
+  background: linear-gradient(
+    180deg,
     rgba(184, 8, 246, 0) 25.45%,
     #ff8a00 59.31%,
     rgba(255, 138, 0, 0) 86.4%

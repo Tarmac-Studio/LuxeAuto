@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
-// import Header from "./elements/Header"; // Only needed if you actually want to render it inside the page
-
+import Home from "./pages/Home";
 function App() {
   return (
     <Router>
@@ -10,7 +9,7 @@ function App() {
           path="/"
           element={
             <Layout>
-              {/* Page content goes here, not Header again if it's already in Layout */}
+              <Home />
             </Layout>
           }
         />
