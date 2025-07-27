@@ -30,12 +30,13 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-transparent h-23">
-      <nav className="max-w-8xl mx-auto flex items-center justify-between h-full px-4 sm:px-6 md:px-10 lg:px-15 xl:px-10 2xl:px-30 relative">
+    <header className="fixed top-0 left-0 w-full z-50 bg-transparent h-[60px] sm:h-[64px]">
+      {/* <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-sm h-[60px] sm:h-[64px]"> */}
+      <nav className="max-w-8xl mx-auto flex items-center justify-between h-full px-3 sm:px-5 md:px-6 lg:px-10 xl:px-12 relative">
         <div className="absolute bottom-0 left-0 w-full h-[1px] border-gradient hidden xl:block"></div>
         <div className="flex items-center h-full">
           <Link to="/">
-            <img src={assets.Logo} alt="Logo" className="h-10 w-auto" />
+            <img src={assets.Logo} alt="Logo" className="h-7 sm:h-8 w-auto" />
           </Link>
         </div>
 
@@ -44,20 +45,19 @@ const Header: React.FC = () => {
           {navItems.map((item) => (
             <li
               key={item.slug}
-              className="relative h-full flex items-center group"
+              className="relative h-full flex items-center group text-[13px] sm:text-[14px]"
             >
               <Link
                 to={item.slug === "home" ? "/" : `/${item.slug}`}
                 onClick={() => handleNavClick(item.slug)}
-                className={`group  relative flex flex-col justify-center px-4 text-[15px] font-semibold  ${
+                className={`group relative flex flex-col justify-center px-4 font-semibold ${
                   activeItem === item.slug
-                    ? "text-light nav-gradient-back h-full  px-10"
-                    : "text-light nav-gradient  py-3"
+                    ? "text-light nav-gradient-back h-full px-10"
+                    : "text-light nav-gradient py-3"
                 } hover:text-[#ff0c10]`}
               >
                 {item.label}
 
-                {/* White overlay to hide red underline under active item */}
                 {activeItem === item.slug && (
                   <span className="absolute bottom-0 left-0 w-full h-[1px] bg-white z-10"></span>
                 )}
@@ -68,7 +68,7 @@ const Header: React.FC = () => {
 
         <a
           href="/"
-          className="gradient-bg text-black text-[15px] font-bold px-10 py-3  hover:opacity-90 transition-all duration-300 hidden xl:block"
+          className="gradient-bg text-black text-[13px] font-bold px-6 py-2 hover:opacity-90 transition-all duration-300 hidden xl:block"
         >
           CONNECT WALLET
         </a>
@@ -76,12 +76,12 @@ const Header: React.FC = () => {
         <div className="xl:hidden flex items-center">
           {menuOpen ? (
             <FaTimes
-              className="text-white text-3xl cursor-pointer"
+              className="text-white text-2xl cursor-pointer"
               onClick={() => setMenuOpen(false)}
             />
           ) : (
             <FaBars
-              className="text-white text-3xl cursor-pointer"
+              className="text-white text-2xl cursor-pointer"
               onClick={() => setMenuOpen(true)}
             />
           )}
@@ -95,7 +95,7 @@ const Header: React.FC = () => {
         >
           <div className="flex justify-end px-8 pt-5">
             <FaTimes
-              className="text-white text-4xl cursor-pointer"
+              className="text-white text-3xl cursor-pointer"
               onClick={() => setMenuOpen(false)}
             />
           </div>
@@ -106,7 +106,7 @@ const Header: React.FC = () => {
                 key={item.slug}
                 to={item.slug === "home" ? "/" : `/${item.slug}`}
                 onClick={() => handleNavClick(item.slug)}
-                className={`text-2xl  ${
+                className={`text-lg ${
                   activeItem === item.slug ? "text-pink-500" : "text-white"
                 } hover:text-orange-400`}
               >
@@ -116,7 +116,7 @@ const Header: React.FC = () => {
 
             <a
               href="/"
-              className="gradient-bg text-black text-sm font-bold px-10 py-3 rounded-sm hover:opacity-90 transition-all duration-300"
+              className="gradient-bg text-black text-sm font-bold px-8 py-2 rounded-sm hover:opacity-90 transition-all duration-300"
             >
               CONNECT WALLET
             </a>
