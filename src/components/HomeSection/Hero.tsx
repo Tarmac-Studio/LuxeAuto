@@ -1,9 +1,9 @@
-import { assets } from "../assets/asset";
+import { assets } from "../../assets/asset";
 import { Link } from "react-router-dom";
 
 const Hero: React.FC = () => {
   return (
-    <div className="w-full overflow-hidden font-metropolis">
+    <div className="w-full overflow-hidden ">
       <div
         role="img"
         className="min-h-[80vh] sm:min-h-[90vh] md:min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-cover bg-center relative"

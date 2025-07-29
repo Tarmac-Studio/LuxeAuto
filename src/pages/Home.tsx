@@ -1,4 +1,5 @@
-import Hero from "../components/Hero";
+import FeaturedCars from "../components/HomeSection/FeaturedCars";
+import Hero from "../components/HomeSection/Hero";
 import Warranty from "../components/HomeSection/Warranty";
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
     <>
       <Hero />
       <Warranty />
+      <FeaturedCars />
     </>
   );
 };

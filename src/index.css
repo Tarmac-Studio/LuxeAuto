@@ -47,6 +47,19 @@ html {
   background-clip: padding-box;
   border-radius: 9999px;
 }
+.gradient-cars-border {
+  border: 2px solid;
+
+  border-image-source: linear-gradient(
+    314.25deg,
+    #ffd700 23.26%,
+    rgba(255, 215, 0, 0) 31.89%,
+    #ffd700 100.11%,
+    rgba(255, 215, 0, 0) 10.26%
+  );
+
+  border-image-slice: 1;
+}
 
 .border-gradient {
   background: linear-gradient(97.51deg, #b808f6 -31.26%, #ff7712 105.37%);
