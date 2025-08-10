@@ -1,9 +1,11 @@
-import AboutSection from "../components/AboutSection";
+import AboutHero from "../components/AboutSection/AboutHero";
+import Crypto from "../components/AboutSection/Crypto";
 
 const About = () => {
   return (
     <>
-      <AboutSection />
+      <AboutHero />
+      <Crypto />
     </>
   );
 };
