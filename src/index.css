@@ -61,6 +61,10 @@ html {
   border-image-slice: 1;
 }
 
+.bg-gradient-bold {
+  background: linear-gradient(97.51deg, #b808f6 -31.26%, #ff7712 105.37%);
+}
+
 .border-gradient {
   background: linear-gradient(97.51deg, #b808f6 -31.26%, #ff7712 105.37%);
 }

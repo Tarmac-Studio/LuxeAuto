@@ -13,6 +13,7 @@ const Header: React.FC = () => {
     { label: "About US", slug: "about-us" },
     { label: "How it Works", slug: "how-it-works" },
     { label: "Contact US", slug: "contact-us" },
+    // { label: "Connect Wallet", slug: "connect-wallet" },
   ];
 
   useEffect(() => {
@@ -67,7 +68,7 @@ const Header: React.FC = () => {
         </ul>
 
         <a
-          href="/"
+          href="/connect-wallet"
           className="gradient-bg text-black text-[13px] font-bold px-6 py-2 hover:opacity-90 transition-all duration-300 hidden xl:block"
         >
           CONNECT WALLET
@@ -115,7 +116,7 @@ const Header: React.FC = () => {
             ))}
 
             <a
-              href="/"
+              href="/connect-wallet"
               className="gradient-bg text-black text-sm font-bold px-8 py-2 rounded-sm hover:opacity-90 transition-all duration-300"
             >
               CONNECT WALLET

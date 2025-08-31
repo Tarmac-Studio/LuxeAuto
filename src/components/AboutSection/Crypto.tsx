@@ -8,9 +8,15 @@ import explore_Img from "../../assets/About-Us/Frame 6.png";
 
 const Crypto: React.FC = () => {
   return (
-    <div className="relative w-full overflow-hidden bg-black text-light">
-      <div className="relative w-full h-[900px] sm:h-[600px] md:h-[700px] lg:h-[800px] overflow-hidden flex items-start justify-center">
-        <p className="mt-9 absolute tracking-widest top-[40px] sm:top-[50px] md:top-[60px] left-0 w-full px-6 sm:px-10 md:px-[100px] lg:px-[120px] text-sm sm:text-base md:text-lg lg:text-[18px] text-light font-light leading-relaxed text-left">
+    <div className="relative w-full overflow-hidden text-light">
+      <div className="relative w-full flex items-start justify-center min-h-[400px] sm:min-h-[500px] md:min-h-[600px] lg:min-h-[700px]">
+        <img
+          src={cryptoImage}
+          alt="Crypto"
+          className="absolute left-0 w-full sm:w-[500px] md:w-[650px] lg:w-[870px] max-w-none top-[-300px] sm:top-[-240px] md:top-[-310px] lg:top-[-410px]"
+        />
+
+        <p className="absolute top-[20px] sm:top-[40px] md:top-[60px] left-0 w-full px-4 sm:px-8 md:px-[80px] lg:px-[120px] text-xs sm:text-sm md:text-base lg:text-[18px] text-light font-light leading-relaxed text-left">
           At LuxeAutoChain, we redefine the automotive experience by seamlessly
           integrating the world of luxury cars with cutting-edge blockchain
           technology. Our passion for excellence drives us to curate an
@@ -18,25 +24,18 @@ const Crypto: React.FC = () => {
           vehicle in our inventory is a testament to both opulence and
           performance.
         </p>
-        <div className="relative">
-          <img
-            src={cryptoImage}
-            alt="Crypto"
-            className="w-[600px] sm:w-[700px] md:w-[800px] lg:w-[870px] max-w-none relative left-[-100px] sm:left-[-180px] md:left-[-220px] lg:left-[-240px] top-[-500px] sm:top-[-360px] md:top-[-410px] lg:top-[-445px]"
-          />
-        </div>
       </div>
 
-      {/* OUR MISSION Section */}
-      <div className="flex pb-[50px] z-10 sm:-mt-[140px] md:-mt-[180px] lg:-mt-[200px] lg:flex-row items-center justify-center px-6 sm:px-10 gap-8 lg:gap-16 mb-8">
+      {/* === OUR MISSION SECTION === */}
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-6 sm:gap-10 lg:gap-16 mt-16 sm:mt-20 md:mt-28">
         <div className="max-w-xl text-left">
-          <p className="uppercase text-xs tracking-widest text-primary mb-2">
+          <p className="uppercase text-[10px] sm:text-xs tracking-widest text-primary mb-2">
             Elevating Expectations. Redefining Luxury
           </p>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-gradient-bold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-gradient-bold mb-4">
             OUR MISSION
           </h2>
-          <p className="text-sm sm:text-base md:text-lg font-light leading-relaxed text-light">
+          <p className="text-xs sm:text-sm md:text-base lg:text-lg font-light leading-relaxed text-light">
             At the core of LuxeAuto is a mission to exceed expectations and
             redefine the essence of luxury in the automotive industry. We
             believe that the journey to acquiring a luxury car should be as
@@ -44,10 +43,10 @@ const Crypto: React.FC = () => {
           </p>
         </div>
 
-        <div className="-mt-15 md:-mt-12 lg:-mt-14">
-          <div className="relative w-[500px] sm:w-[340px] md:w-[400px] lg:w-[460px] h-[50px] sm:h-[300px] md:h-[360px] lg:h-[420px]">
+        <div className="mt-6 lg:mt-0">
+          <div className="relative w-[260px] sm:w-[320px] md:w-[400px] lg:w-[460px] h-[200px] sm:h-[260px] md:h-[340px] lg:h-[420px]">
             <img
-              className="absolute inset-0 object-cover"
+              className="absolute inset-0 w-full h-full object-cover rounded-md"
               src={carHero}
               alt="Luxury SUV"
             />
@@ -55,24 +54,34 @@ const Crypto: React.FC = () => {
         </div>
       </div>
 
-      <div className="relative flex items-center justify-center mt-30">
+      <div className="relative flex items-center justify-center mt-20 sm:mt-28 md:mt-32">
         <img
           src={valueBg_Img}
           alt="Value Background"
-          className="w-[1000px] sm:w-[2400px] md:w-[2000px] lg:w-[1000px] object-contain"
+          className="w-[1000px] sm:w-[1600px] md:w-[1800px] lg:w-[1000px] object-contain"
         />
 
         <img
           src={luxeAutosValue}
           alt="Luxe Autos Value"
-          className="absolute w-[1000px] sm:w-[2400px] md:w-[2000px] lg:w-[1000px] object-contain object-contain z-10 opacity-50"
+          className="absolute w-[1000px] sm:w-[1600px] md:w-[1800px] lg:w-[1000px] object-contain z-10 opacity-50"
         />
       </div>
-      <div className="relative flex items-center justify-center mb-10">
-        <img src={journey_Img} alt="Journey" />
+
+      <div className="relative flex items-center justify-center mt-10 mb-10 px-4">
+        <img
+          src={journey_Img}
+          alt="Journey"
+          className="w-full sm:w-[90%] md:w-[80%] lg:w-auto"
+        />
       </div>
-      <div className="flex items-center justify-center mb-15">
-        <img src={explore_Img} alt="Explore" />
+
+      <div className="flex items-center justify-center mb-12 px-4">
+        <img
+          src={explore_Img}
+          alt="Explore"
+          className="w-full sm:w-[90%] md:w-[80%] lg:w-auto"
+        />
       </div>
     </div>
   );

@@ -3,18 +3,20 @@ import aboutHero from "../../assets/About-Us/about-luxeautos-bg.png";
 const AboutSection: React.FC = () => {
   return (
     <div className="w-full overflow-hidden font-metropolis">
-      {/* Hero Section */}
-      <div
-        className="min-h-[50vh] sm:min-h-[60vh] md:min-h-[70vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-cover bg-center relative"
-        style={{ backgroundImage: `url(${aboutHero})` }}
-      >
-        <div className="max-w-5xl w-full text-center z-10 relative px-4 sm:px-6 md:px-10 mt-10 sm:mt-16 md:mt-24">
-          <h1 className="text-4xl sm:text-5xl md:text-[48px] lg:text-[60px] text-gradient-bold font-black leading-tight sm:leading-[56px] md:leading-[64px] max-w-4xl w-full">
+      <div className="relative w-full flex items-center justify-center min-h-[220px] sm:min-h-[320px] md:min-h-[420px] lg:min-h-[520px]">
+        <img
+          src={aboutHero}
+          alt="Car"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+
+        <div className="relative z-10 max-w-5xl w-full text-center px-4 sm:px-6 md:px-10 lg:px-12 mt-10 sm:mt-16 md:mt-24">
+          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl text-gradient-bold font-extrabold leading-snug sm:leading-tight md:leading-snug max-w-4xl mx-auto drop-shadow-md">
             About LUXEAUTOS
           </h1>
 
-          <p className="text-base sm:text-lg md:text-[18px] py-3 sm:py-4 text-light font-light">
-            A high-end collections of the world’s finest automobiles.
+          <p className="text-xs sm:text-sm md:text-lg lg:text-xl py-2 sm:py-3 md:py-4 text-gray-200 font-light max-w-2xl mx-auto px-2 sm:px-0">
+            A high-end collection of the world’s finest automobiles.
           </p>
         </div>
       </div>

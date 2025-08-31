@@ -3,7 +3,7 @@ import { features } from "../../lib/homeLib";
 
 const Warranty: React.FC = () => {
   return (
-    <section className="w-full px-4 sm:px-6 md:px-8 lg:px-10 xl:px-4 2xl:px-30 py-10 flex flex-wrap justify-between items-start gap-y-8 text-light">
+    <section className="w-full px-4 sm:px-6 md:px-8 lg:px-10 xl:px-4 2xl:px-30 flex flex-wrap justify-between items-start gap-y-8 text-light">
       {features.map((feature, index) => (
         <div
           key={index}
