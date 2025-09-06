@@ -23,14 +23,13 @@ const Hero: React.FC = () => {
               Explore our exquisite collection of the world's finest automobiles
             </p>
 
-            <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 md:gap-9">
+            {/* Button */}
+            <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 sm:gap-5 md:gap-7 mt-6 w-full">
               <Link
                 to="/"
-                className="gradient-border uppercase cursor-pointer px-10 sm:px-12 md:px-18 py-3 sm:py-4 font-bold transition duration-300  "
+                className="gradient-border uppercase cursor-pointer px-6 py-2 text-sm sm:px-8 sm:py-3 sm:text-base md:px-10 md:py-4 md:text-lg lg:px-12 lg:py-4 lg:text-xl font-bold transition duration-300 text-center"
               >
-                <span className="text-gradient-soft  sm:text-base  md:text-2xl ">
-                  Explore Now
-                </span>
+                <span className="text-gradient-soft block">Explore Now</span>
               </Link>
             </div>
           </div>

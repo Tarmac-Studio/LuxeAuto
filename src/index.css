@@ -48,7 +48,7 @@ html {
   border-radius: 9999px;
 }
 .gradient-cars-border {
-  border: 2px solid;
+  border: 1px solid;
 
   border-image-source: linear-gradient(
     314.25deg,
